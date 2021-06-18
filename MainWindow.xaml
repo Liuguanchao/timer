@@ -1,0 +1,168 @@
+﻿<Window x:Class="timer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:timer"
+        mc:Ignorable="d"
+        Title="倒计时" Height="269.333" Width="488.667" Loaded="Window_Loaded" ResizeMode="NoResize" FontSize="24">
+    <Grid>
+        <Canvas>
+            <Button Content="计时" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Click="Button_Click" Height="48" Canvas.Left="357" Canvas.Top="39" FontSize="20"  />
+            <Label Content="时" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" Canvas.Left="28" Canvas.Top="44"/>
+            <Label Content="分" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.912,1.228" Height="40" Width="40" FontSize="24" Canvas.Left="132" Canvas.Top="44"/>
+            <Label Content="秒" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" Canvas.Left="237" Canvas.Top="44" />
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Name="comhour" SelectedIndex="0" Height="50" FontSize="36" HorizontalContentAlignment="Center" Canvas.Left="59" Canvas.Top="39" MouseWheel="comhour_MouseWheel" >
+                <ComboBoxItem Content="0" HorizontalAlignment="Center" />
+                <ComboBoxItem Content="1" HorizontalAlignment="Center" />
+                <ComboBoxItem Content="2" HorizontalAlignment="Center" />
+                <ComboBoxItem Content="3" HorizontalAlignment="Center" />
+                <ComboBoxItem Content="4" HorizontalAlignment="Center" />
+                <ComboBoxItem Content="5" HorizontalAlignment="Center" />
+                <ComboBoxItem Content="6" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="7" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="8" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="9" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="10" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="11" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="12" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="13" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="14" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="15" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="16" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="17" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="18" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="19" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="20" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="21" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="22" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="23" HorizontalAlignment="Center"/>
+            </ComboBox>
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Name="comminute" SelectedIndex="0" Height="50" FontSize="36" HorizontalContentAlignment="Center" Canvas.Left="164" Canvas.Top="39" MouseWheel="comminute_MouseWheel" >
+                <ComboBoxItem Content="0" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="1" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="2" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="3" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="4" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="5" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="6" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="7" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="8" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="9" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="10" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="11" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="12" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="13" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="14" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="15" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="16" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="17" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="18" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="19" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="20" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="21" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="22" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="23" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="24" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="25" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="26" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="27" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="28" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="29" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="30" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="31" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="32" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="33" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="34" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="35" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="36" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="37" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="38" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="39" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="40" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="41" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="42" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="43" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="44" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="45" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="46" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="47" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="48" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="49" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="50" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="51" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="52" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="53" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="54" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="55" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="56" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="57" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="58" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="59" HorizontalAlignment="Center"/>
+            </ComboBox>
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Name="comsecond" SelectedIndex="0" Height="50" FontSize="36" HorizontalContentAlignment="Center" Canvas.Left="270" Canvas.Top="39" MouseWheel="comsecond_MouseWheel"  >
+                <ComboBoxItem Content="0" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="1" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="2" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="3" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="4" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="5" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="6" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="7" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="8" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="9" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="10" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="11" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="12" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="13" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="14" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="15" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="16" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="17" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="18" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="19" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="20" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="21" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="22" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="23" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="24" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="25" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="26" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="27" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="28" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="29" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="30" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="31" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="32" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="33" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="34" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="35" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="36" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="37" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="38" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="39" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="40" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="41" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="42" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="43" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="44" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="45" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="46" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="47" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="48" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="49" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="50" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="51" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="52" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="53" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="54" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="55" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="56" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="57" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="58" HorizontalAlignment="Center"/>
+                <ComboBoxItem Content="59" HorizontalAlignment="Center"/>
+            </ComboBox>
+            <TextBox HorizontalAlignment="Left" Height="114" Margin="10,109,0,0" TextWrapping="Wrap" Text="" Name="textBox" VerticalAlignment="Top" Width="454" FontSize="36" FontFamily="Arial Black" />
+        </Canvas>
+    </Grid>
+</Window>
